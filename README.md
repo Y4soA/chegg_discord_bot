@@ -1,2 +1,5 @@
-# chegg_discord_bot
-simple discord bot built in js
+# chegg discord bot
+
+Allow others to grab answers to chegg homework problems via Discord
+
+
