@@ -1,8 +1,10 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
 const puppeteer = require('puppeteer-extra');
 const fs = require('fs');
 const https = require('https');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth')
+
+const client = new Discord.Client();
 
 global.username = 'example@gmail.com'
 global.password = 'examplepassword'
@@ -10,7 +12,6 @@ global.discordlogin = 'discord_token_here'
 
 var queue = false;
 
-const StealthPlugin = require('puppeteer-extra-plugin-stealth')
 puppeteer.use(StealthPlugin())
 
 const download = (url, destination) => new Promise((resolve, reject) => {
